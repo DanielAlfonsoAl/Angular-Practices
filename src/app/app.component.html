@@ -1,0 +1,12 @@
+<p *ngIf="name != ''" >el nombre es : {{ name }}  </p>
+<input  type="text" [(ngModel)] = "name">
+
+
+<ul *ngFor = "let city of citys">
+<!--   <li [ngStyle]="{'color' : city === 'España' ?  'green' :'white' , 'background-color' : city == 'España' ? 'blue' : 'green'}">{{city}}</li> --> 
+<li [ngClass]="{'selected' : city === 'España' , 'blue' : city != 'España'}">{{city}}</li> 
+</ul>
+guardelo en el github hp para que siga en la casa <3
+<div>
+  <p *ngIf="selection != '' ">your city is : {{selection}}</p>
+</div>
